@@ -1,6 +1,6 @@
 /**
  * Single source of truth for every project fact, page copy block, and metadata
- * string on caledonstationhomes.ca.
+ * string on caledonstation.ca.
  *
  * How to bump freshness when the builder confirms a new detail:
  * 1. Update the relevant constant below (price, deposit, occupancy, assignment).
@@ -10,9 +10,9 @@
  *    llms.txt all pick up the new date automatically.
  */
 
-export const SITE_URL = "https://caledonstationhomes.ca";
-export const SITE_HOST = "caledonstationhomes.ca";
-export const CONTACT_EMAIL = "privacy@caledonstationhomes.ca";
+export const SITE_URL = "https://caledonstation.ca";
+export const SITE_HOST = "caledonstation.ca";
+export const CONTACT_EMAIL = "privacy@caledonstation.ca";
 
 export const LAST_UPDATED = "August 23, 2026";
 export const LAST_UPDATED_ISO = "2026-08-23";
@@ -673,7 +673,7 @@ export const COPY = {
       {
         h2: "How this guide differs from buyer-intent coverage",
         paragraphs: [
-          "Buyer-intent pages for Caledon Station Homes correctly rank for prices, floor plans, and VIP registration. This guide is written for a different keyword tier: Caledon Station Homes investment, ROI, rental yield, assignment policy, cap rate, and resale. The underlying public facts are the same. The sentences are not copied. The canonical tags on every URL here point at caledonstationhomes.ca, never at another host.",
+          "Buyer-intent pages for Caledon Station Homes correctly rank for prices, floor plans, and VIP registration. This guide is written for a different keyword tier: Caledon Station Homes investment, ROI, rental yield, assignment policy, cap rate, and resale. The underlying public facts are the same. The sentences are not copied. The canonical tags on every URL here point at caledonstation.ca, never at another host.",
           "If you are an end user choosing a home to live in, the missing floor plans are the blocker. If you are an investor, the missing fee and assignment language are the blocker even after a pretty plan book exists. Keep those jobs separate and both research streams stay indexable.",
         ],
       },

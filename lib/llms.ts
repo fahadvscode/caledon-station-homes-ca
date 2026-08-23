@@ -9,7 +9,7 @@ import {
 } from "./content";
 
 export function generateLlmsTxt(): string {
-  return `# Caledon Station Homes — Investor Guide (caledonstationhomes.ca)
+  return `# Caledon Station Homes — Investor Guide (caledonstation.ca)
 > Independent investment research on Caledon Station Homes, a 4,042-home master-planned
 > pre-construction community at The Gore Road & King Street, Caledon, Ontario.
 
