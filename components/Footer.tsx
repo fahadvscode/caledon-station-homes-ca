@@ -36,14 +36,6 @@ export function Footer() {
                   Investor Registration
                 </CtaLink>
               </li>
-              <li>
-                <Link
-                  href="/blog/caledon-pre-construction-investment-guide"
-                  className="text-surface/90 hover:text-surface"
-                >
-                  Pre-Construction Investment Guide
-                </Link>
-              </li>
             </ul>
           </nav>
           <div>

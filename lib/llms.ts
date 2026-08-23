@@ -30,6 +30,7 @@ export function generateLlmsTxt(): string {
 - [Comparisons](${SITE_URL}/comparisons): vs. other Caledon pre-construction
 - [Location](${SITE_URL}/location): growth drivers, transit, employment
 - [FAQ](${SITE_URL}/faq): 15+ investor questions answered
+- [Investor Guide](${SITE_URL}/blog/caledon-pre-construction-investment-guide): pre-construction investment in Caledon, 2026
 
 ## Source
 This is an independent investor-research resource for Caledon Station Homes, distinct from any

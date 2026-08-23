@@ -6,6 +6,7 @@ import { StickyMobileCta } from "@/components/StickyMobileCta";
 import { Analytics, GtmNoscript } from "@/components/Analytics";
 import { JsonLd } from "@/components/JsonLd";
 import { siteOrganizationSchema, websiteSchema } from "@/lib/schema";
+import { isPlaceholderId } from "@/lib/analytics";
 import { PAGE_META, SITE_NAME, SITE_URL } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 import "./globals.css";
@@ -24,6 +25,11 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const gsc = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
+const bing = process.env.NEXT_PUBLIC_BING_VERIFICATION;
+const gscReady = Boolean(gsc && !isPlaceholderId(gsc, "GSC"));
+const bingReady = Boolean(bing && !isPlaceholderId(bing, "BING"));
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   ...buildMetadata(PAGE_META.home),
@@ -32,12 +38,14 @@ export const metadata: Metadata = {
     template: "%s",
   },
   applicationName: SITE_NAME,
-  verification: {
-    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
-    other: {
-      "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION ?? "PLACEHOLDER_BING_TOKEN",
-    },
-  },
+  ...(gscReady || bingReady
+    ? {
+        verification: {
+          ...(gscReady ? { google: gsc } : {}),
+          ...(bingReady ? { other: { "msvalidate.01": bing as string } } : {}),
+        },
+      }
+    : {}),
 };
 
 export default function RootLayout({
@@ -45,15 +53,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const gsc = process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "PLACEHOLDER_GSC_TOKEN";
-  const bing = process.env.NEXT_PUBLIC_BING_VERIFICATION ?? "PLACEHOLDER_BING_TOKEN";
-
   return (
     <html lang="en-CA" className={`${instrument.variable} ${inter.variable}`}>
-      <head>
-        <meta name="google-site-verification" content={gsc} />
-        <meta name="msvalidate.01" content={bing} />
-      </head>
       <body className="font-sans antialiased">
         <GtmNoscript />
         <a href="#main" className="skip-link">

@@ -133,6 +133,10 @@ export const NAV = [
   { href: "/comparisons", label: "Comparisons" },
   { href: "/location", label: "Location" },
   { href: "/faq", label: "FAQ" },
+  {
+    href: "/blog/caledon-pre-construction-investment-guide",
+    label: "Investor Guide",
+  },
 ] as const;
 
 export type FaqItem = { q: string; a: string };

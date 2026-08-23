@@ -20,5 +20,11 @@ export function trackMetaLead() {
 
 export function isPlaceholderId(value: string | undefined, needle: string) {
   if (!value) return true;
-  return value.includes(needle) || value.includes("XXXX") || value.includes("[");
+  const upper = value.toUpperCase();
+  return (
+    value.includes(needle) ||
+    upper.includes("XXXX") ||
+    upper.includes("PLACEHOLDER") ||
+    value.includes("[")
+  );
 }

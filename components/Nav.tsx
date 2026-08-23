@@ -27,12 +27,12 @@ export function Nav() {
     >
       <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-5 py-3">
         <WordmarkLink />
-        <nav aria-label="Primary" className="hidden lg:flex items-center gap-6">
+        <nav aria-label="Primary" className="hidden lg:flex items-center gap-4 xl:gap-6">
           {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-[15px] font-medium text-text-primary hover:text-brand-accent"
+              className="whitespace-nowrap text-[14px] font-medium text-text-primary hover:text-brand-accent xl:text-[15px]"
             >
               {item.label}
             </Link>

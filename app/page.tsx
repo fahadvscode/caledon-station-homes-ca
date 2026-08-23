@@ -68,9 +68,10 @@ export default function HomePage() {
             <p>
               Continue with{" "}
               <TextLink href={LINKS.investmentCase.href}>{LINKS.investmentCase.text}</TextLink>,{" "}
-              <TextLink href={LINKS.assignment.href}>{LINKS.assignment.text}</TextLink>, and{" "}
-              <TextLink href={LINKS.comparisons.href}>{LINKS.comparisons.text}</TextLink>. Location
-              context lives in the{" "}
+              <TextLink href={LINKS.assignment.href}>{LINKS.assignment.text}</TextLink>,{" "}
+              <TextLink href={LINKS.comparisons.href}>{LINKS.comparisons.text}</TextLink>, and the{" "}
+              <TextLink href={LINKS.guide.href}>{LINKS.guide.text}</TextLink>. Location context
+              lives in the{" "}
               <TextLink href={LINKS.location.href}>{LINKS.location.text}</TextLink>.
             </p>
           </Prose>
@@ -84,6 +85,23 @@ export default function HomePage() {
         </p>
         <div className="mt-8">
           <FaqAccordion items={previewFaqs} />
+        </div>
+      </Section>
+      <Section alt labelledBy="investor-guide">
+        <SectionHeading id="investor-guide">Pre-construction investment guide</SectionHeading>
+        <div className="mt-8">
+          <Prose>
+            <p>
+              The full 2026 guide walks through how to underwrite pre-construction in Caledon
+              without inventing a yield: Peel Region screening, closing-cost categories, assignment
+              risk, and how to drop Caledon Station Homes numbers into the model once the builder
+              publishes them.
+            </p>
+            <p>
+              Read the{" "}
+              <TextLink href={LINKS.guide.href}>{LINKS.guide.text}</TextLink>.
+            </p>
+          </Prose>
         </div>
       </Section>
       <CtaBlock
