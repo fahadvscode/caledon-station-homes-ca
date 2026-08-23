@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { CtaLink } from "./CtaLink";
 import { LeadForm } from "./LeadForm";
+import { MotionRise } from "./MotionRise";
 
 export function Container({
   children,
@@ -20,6 +21,9 @@ export function PageHeader({ h1, lede }: { h1: string; lede?: string }) {
         <h1 className="font-display font-semibold text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.15] max-w-[22ch]">
           {h1}
         </h1>
+        <MotionRise>
+          <span className="mt-5 block h-px w-20 bg-brand-accent" aria-hidden="true" />
+        </MotionRise>
         {lede ? <p className="mt-5 max-w-[62ch] text-lg text-surface/85">{lede}</p> : null}
       </Container>
     </header>

@@ -8,7 +8,6 @@ import {
 } from "@/lib/content";
 import { CtaLink } from "./CtaLink";
 import { LeadForm } from "./LeadForm";
-import { MotionRise } from "./MotionRise";
 
 export function Hero() {
   const meta = PAGE_META.home;
@@ -43,9 +42,7 @@ export function Hero() {
           <p className="mt-6 max-w-[48ch] text-sm text-surface/75">{HERO_IMAGE.caption}</p>
         </div>
         <div className="min-h-[28rem]">
-          <MotionRise>
-            <LeadForm id="hero-register" compact />
-          </MotionRise>
+          <LeadForm id="hero-register" compact />
         </div>
       </div>
     </section>
