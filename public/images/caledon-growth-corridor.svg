@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img">
+  <title>Caledon growth corridor real estate map</title>
+  <rect width="1600" height="900" fill="#F7F5F1"/>
+  <rect x="40" y="40" width="1520" height="820" fill="#EFEBE3" stroke="#DAD5C9"/>
+  <path d="M120 720 L1480 280" stroke="#14213D" stroke-width="18"/>
+  <path d="M200 160 L900 780" stroke="#C98A3B" stroke-width="14"/>
+  <path d="M980 120 L1320 760" stroke="#5B6478" stroke-width="10" stroke-dasharray="12 10"/>
+  <circle cx="720" cy="470" r="22" fill="#C98A3B"/>
+  <text x="760" y="455" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28" font-weight="600" fill="#14213D">Gore Rd &amp; King St</text>
+  <text x="760" y="492" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" fill="#5B6478">Caledon Station Homes site</text>
+  <text x="160" y="130" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" letter-spacing="0.16em" fill="#C98A3B">HIGHWAY 410 / MAYFIELD ROAD CORRIDOR</text>
+  <text x="1100" y="200" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#5B6478">Toward Brampton / GTA</text>
+  <text x="80" y="840" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#5B6478">Caledon growth corridor context. Proposed GO service is not shown as operating.</text>
+</svg>

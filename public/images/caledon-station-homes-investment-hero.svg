@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="title desc">
+  <title id="title">Caledon Station Homes investment map of The Gore Road and King Street</title>
+  <desc id="desc">Cartographic illustration of the Caledon growth corridor at The Gore Road and King Street for investors.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1526"/>
+      <stop offset="55%" stop-color="#14213D"/>
+      <stop offset="100%" stop-color="#1B3358"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <g fill="#1E3A2F" opacity="0.35">
+    <rect x="80" y="120" width="520" height="380" rx="8"/>
+    <rect x="640" y="90" width="610" height="430" rx="8"/>
+    <rect x="1290" y="160" width="520" height="360" rx="8"/>
+    <rect x="120" y="620" width="700" height="360" rx="8"/>
+    <rect x="880" y="650" width="920" height="330" rx="8"/>
+  </g>
+  <path d="M0 540 H1920" stroke="#C98A3B" stroke-width="28" opacity="0.9"/>
+  <path d="M860 0 V1080" stroke="#C98A3B" stroke-width="22" opacity="0.85"/>
+  <path d="M0 540 H1920" stroke="#F7F5F1" stroke-width="4" stroke-dasharray="18 16" opacity="0.5"/>
+  <circle cx="860" cy="540" r="28" fill="#C98A3B"/>
+  <circle cx="860" cy="540" r="12" fill="#0B1526"/>
+  <text x="900" y="500" fill="#F7F5F1" font-family="ui-sans-serif, system-ui, sans-serif" font-size="36" font-weight="600">The Gore Road &amp; King Street</text>
+  <text x="900" y="548" fill="#C98A3B" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" letter-spacing="0.12em">CALEDON STATION HOMES · 4,042 PLANNED HOMES</text>
+  <text x="120" y="80" fill="#EFEBE3" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20" letter-spacing="0.18em">INVESTOR MAP · MACVILLE, CALEDON, ONTARIO</text>
+  <text x="140" y="980" fill="#DAD5C9" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">Illustration only. Not a builder rendering. Pricing not yet announced.</text>
+</svg>

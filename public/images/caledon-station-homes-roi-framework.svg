@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img">
+  <title>Caledon Station Homes ROI framework</title>
+  <rect width="1600" height="900" fill="#0B1526"/>
+  <text x="80" y="90" fill="#C98A3B" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" letter-spacing="0.16em">CALEDON STATION HOMES ROI</text>
+  <text x="80" y="150" fill="#F7F5F1" font-family="ui-sans-serif, system-ui, sans-serif" font-size="40" font-weight="600">Gross yield = annual rent ÷ price</text>
+  <g fill="none" stroke="#C98A3B" stroke-width="2">
+    <rect x="80" y="220" width="440" height="200" rx="6"/>
+    <rect x="580" y="220" width="440" height="200" rx="6"/>
+    <rect x="1080" y="220" width="440" height="200" rx="6"/>
+  </g>
+  <text x="110" y="280" fill="#F7F5F1" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22">Price per sq ft</text>
+  <text x="110" y="330" fill="#C98A3B" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28">To be announced</text>
+  <text x="610" y="280" fill="#F7F5F1" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22">Maintenance / POTL</text>
+  <text x="610" y="330" fill="#C98A3B" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28">Unknown  do not estimate</text>
+  <text x="1110" y="280" fill="#F7F5F1" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22">Net yield / cap rate</text>
+  <text x="1110" y="330" fill="#C98A3B" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28">Blocked until inputs exist</text>
+  <text x="80" y="520" fill="#EFEBE3" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24">Net yield = (rent  fees  tax  vacancy  opex) ÷ price</text>
+  <text x="80" y="580" fill="#EFEBE3" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24">Cap rate = NOI ÷ price · Cash-on-cash = cash flow ÷ cash invested</text>
+  <text x="80" y="820" fill="#5B6478" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">No project-specific return is implied. Framework only, August 2026.</text>
+</svg>
