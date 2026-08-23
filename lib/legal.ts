@@ -11,7 +11,7 @@ export const PRIVACY_SECTIONS: { h2: string; paragraphs: string[] }[] = [
     h2: "What is collected and why",
     paragraphs: [
       "When you submit the investor registration form, this site collects first name, last name, email address, telephone number, whether you are a licensed real estate agent or broker, and a record of CASL consent. Those fields are used to notify registrants when pricing, deposit structure, and assignment policy are confirmed, and to understand which campaigns led to a registration.",
-      "The site may also store first-touch marketing parameters (utm_source, utm_medium, utm_campaign, utm_term, utm_content), the page path on which consent was given, and a timestamp of consent. Consent, timestamp and page path together are the proof-of-consent record under Canada's Anti-Spam Legislation. UTM values and consent proof are stored separately from the five-field leads table.",
+      "The site may also store first-touch marketing parameters (utm_source, utm_medium, utm_campaign, utm_term, utm_content), the page path on which consent was given, and a timestamp of consent. Consent, timestamp and page path together are the proof-of-consent record under Canada's Anti-Spam Legislation. Registration rows are stored in the same Caledon Station Homes leads table used by the companion project site.",
     ],
   },
   {

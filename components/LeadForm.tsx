@@ -37,8 +37,6 @@ export function LeadForm({
       last_name: "",
       email: "",
       phone: "",
-      is_broker: undefined,
-      casl_consent: undefined,
       website: "",
       ts,
       page_path: pathname,
@@ -49,8 +47,8 @@ export function LeadForm({
     if (started.current) return;
     started.current = true;
     try {
-      if (!sessionStorage.getItem("csh_ca_form_start")) {
-        sessionStorage.setItem("csh_ca_form_start", "1");
+      if (!sessionStorage.getItem("csh_form_start")) {
+        sessionStorage.setItem("csh_form_start", "1");
         trackEvent("form_start");
       }
     } catch {
@@ -109,9 +107,11 @@ export function LeadForm({
       className={`${compact ? "card scroll-mt-28 p-5 md:p-6" : "card scroll-mt-28 p-6 md:p-8"}`}
       noValidate
     >
-      <p className="mb-5 font-display text-xl font-semibold text-brand-deep">
-        Investor Registration
-      </p>
+      {compact ? (
+        <p className="mb-5 font-display text-xl font-semibold text-brand-deep">
+          Investor Registration
+        </p>
+      ) : null}
       <div className="grid gap-5 md:grid-cols-2">
         <div>
           <label htmlFor={`${id}-first_name`} className={labelClass}>
@@ -170,9 +170,7 @@ export function LeadForm({
       </div>
 
       <fieldset className="mt-5">
-        <legend className={labelClass}>
-          Are you a licensed real estate agent/broker?
-        </legend>
+        <legend className={labelClass}>Are you a broker?</legend>
         <div className="mt-2 flex gap-6">
           <label className="inline-flex items-center gap-2">
             <input type="radio" value="yes" {...form.register("is_broker")} />

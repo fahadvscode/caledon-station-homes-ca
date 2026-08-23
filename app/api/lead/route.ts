@@ -44,28 +44,16 @@ export async function POST(request: Request) {
 
   try {
     const supabase = getSupabaseAnon();
-    const { data: lead, error } = await supabase
-      .from("caledon_station_homes_ca_leads")
-      .insert({
-        first_name: data.first_name,
-        last_name: data.last_name,
-        email: data.email,
-        phone: normalizePhone(data.phone),
-        is_broker: data.is_broker === "yes",
-      })
-      .select("id")
-      .single();
-
-    if (error) {
-      console.error("Lead insert failed", error.message);
-      return NextResponse.json(
-        { ok: false, error: "Registration could not be stored. Please try again." },
-        { status: 500 },
-      );
-    }
-
-    const { error: metaError } = await supabase.from("caledon_station_homes_ca_lead_meta").insert({
-      lead_id: lead?.id ?? null,
+    const { error } = await supabase.from("caledon_station_homes_leads").insert({
+      first_name: data.first_name,
+      last_name: data.last_name,
+      email: data.email,
+      phone: normalizePhone(data.phone),
+      home_type_interest: null,
+      budget_range: null,
+      buyer_type: "investor",
+      timeline: null,
+      is_broker: data.is_broker === "yes",
       casl_consent: true,
       consent_timestamp: consentAt,
       consent_page_path: pagePath,
@@ -76,8 +64,12 @@ export async function POST(request: Request) {
       utm_content: data.utm_content || null,
     });
 
-    if (metaError) {
-      console.error("Lead meta insert failed", metaError.message);
+    if (error) {
+      console.error("Lead insert failed", error.message);
+      return NextResponse.json(
+        { ok: false, error: "Registration could not be stored. Please try again." },
+        { status: 500 },
+      );
     }
   } catch (error) {
     console.error("Lead handler error", error);
